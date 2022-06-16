@@ -61,4 +61,8 @@ seeds:
     snowflake_contract_rates:
       +column_types:
         effective_date: DATE
-        rate: NUMBER   
+        rate: NUMBER
+        
+dispatch:
+  - macro_namespace: dbt_utils
+    search_order: ['spark_utils', 'dbt_utils']
