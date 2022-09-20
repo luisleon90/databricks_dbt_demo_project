@@ -16,7 +16,7 @@ renamed as (
         c_acctbal as account_balance,
         c_mktsegment as market_segment,
         c_comment as comment,
-        1
+        1 as new col
 
     from source
 
