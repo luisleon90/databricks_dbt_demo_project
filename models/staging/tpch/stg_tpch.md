@@ -7,7 +7,7 @@
 
 {% docs line_number %} sequence of the order items within the order {% enddocs %}
 
-{% docs return_flag %} letter determining the status of the return {% enddocs %}
+{% docs return_flag %} letter determining the status of the return (r is returned) {% enddocs %}
 
 {% docs ship_date %} the date the order item is being shipped {% enddocs %}
 
