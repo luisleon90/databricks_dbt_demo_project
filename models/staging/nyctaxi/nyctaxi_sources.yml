@@ -15,4 +15,5 @@ sources:
                 values: ['10278','11575','10003','10031','11105','10463','10038','11224']
                 severity: warn
         - name: tpep_pickup_datetime
+          description: the zip code where the trip began
           description: Date and time of the trip start
