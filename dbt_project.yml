@@ -37,17 +37,15 @@ dispatch:
 models:
   file_format: delta
   incremental_strategy: merge
-
+  demo_examples:
+      +materialized: view
+      +catalog: luis_leon_workspace
+  staging:
+      +materialized: view
+      +catalog: luis_leon_workspace
+  marts:
+      +materialized: view
+      +catalog: luis_leon_workspace
 vars:
   start_date: '1999-01-01'
   test: 'false' # to trigger runs for unit testing - override in a CLI param in testing job
-
-  databricks_demo:
-      # Applies to all files under models/example/
-      example:
-          materialized: view
-      staging:
-          materialized: view
-      marts:
-          materialized: table
-    

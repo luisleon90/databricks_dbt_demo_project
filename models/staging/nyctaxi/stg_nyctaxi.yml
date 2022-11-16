@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_nyctaxi_trips
+    description: staging model containing cleaned data of trips from the taxi fleet
+    columns:
+      - name: pickup_time
+        description: trip start time
+        tests:
+          - not_null
+      - name: dropoff_time
+        tests:
+          - not_null      
+      - name: trip_distance
+      - name: fare_amount
+      - name: pickup_zip
+      - name: dropoff_zip

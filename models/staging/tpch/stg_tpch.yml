@@ -2,6 +2,9 @@ version: 2
 
 models:
   - name: stg_tpch_customers
+    config:
+      materialized: table
+      catalog: luis_leon_workspace
     description: staging layer for customers data
     columns:
       - name: customer_key
