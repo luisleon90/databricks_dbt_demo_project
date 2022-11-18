@@ -3,7 +3,6 @@ version: 2
 sources:
   - name: nyctaxi
     schema: nyctaxi
-    catalog: hive_metastore
     tables:
       - name: trips
         description: contains all taxi trips in the city

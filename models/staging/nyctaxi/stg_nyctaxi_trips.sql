@@ -1,7 +1,8 @@
 {{
     config(
-        materialized='table'
-            )
+        materialized='table',
+        catalog='luis_leon_workspace'
+    )
 }}
 
 with source as (
@@ -19,10 +20,7 @@ renamed as (
         trip_distance as trip_distance,
         fare_amount as fare_amount,
         pickup_zip as pickup_zip,
-        dropoff_zip as dropoff_zip,
-        0 as new_col,
-        1 as good_data,
-        2 as good_data_fixed
+        dropoff_zip as dropoff_zip
 
     from source
 
