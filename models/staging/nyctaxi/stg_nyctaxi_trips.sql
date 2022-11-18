@@ -1,8 +1,7 @@
 {{
     config(
-        materialized='table',
-        catalog='luis_leon_workspace'
-    )
+        materialized='table'
+            )
 }}
 
 with source as (
@@ -22,7 +21,8 @@ renamed as (
         pickup_zip as pickup_zip,
         dropoff_zip as dropoff_zip,
         0 as new_col,
-        1 as good_data
+        1 as good_data,
+        2 as good_data_fixed
 
     from source
 
