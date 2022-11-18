@@ -20,7 +20,8 @@ renamed as (
         trip_distance as trip_distance,
         fare_amount as fare_amount,
         pickup_zip as pickup_zip,
-        dropoff_zip as dropoff_zip
+        dropoff_zip as dropoff_zip,
+        0 as new_col
 
     from source
 
