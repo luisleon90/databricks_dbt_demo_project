@@ -1,7 +1,9 @@
 {{
     config(
         materialized='table',
-        catalog='luis_leon_workspace'
+        catalog='luis_leon_workspace',
+        grants = {'select': 'luis.leon@dbtlabs.com'}
+        
     )
 }}
 
