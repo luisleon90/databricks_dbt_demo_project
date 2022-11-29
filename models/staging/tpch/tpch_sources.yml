@@ -3,6 +3,7 @@ version: 2
 
 sources:
   - name: tpch
+    catalog: samples
     schema: tpch
     tables:
       - name: orders

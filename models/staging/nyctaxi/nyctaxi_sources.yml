@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: nyctaxi
+    catalog: samples
+    schema: nyctaxi
+    tables:
+      - name: trips
+        description: contains all taxi trips in the city
+        columns:
+        - name: dropoff_zip
+          description: the zip code where the trip ended
+          tests:
+            - accepted_values:
+                values: ['10278','11575','10003','10031','11105','10463','10038','11224']
+                severity: warn
+        - name: tpep_pickup_datetime
+          description: the zip code where the trip began
+          description: Date and time of the trip start
