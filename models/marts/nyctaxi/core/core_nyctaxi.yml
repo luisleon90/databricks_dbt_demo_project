@@ -8,7 +8,7 @@ models:
         description: When the client was picked up in GMT
       - name: dropoff_time
         description: When the client was dropped off in GMT
-      - name: trip_duraction_minutes
+      - name: trip_duration_minutes
         description: Trip duration is calculated in minutes
       - name: trip_distance
         description: Trip distance is calcualted in miles
