@@ -37,6 +37,9 @@ dispatch:
 models:
   file_format: delta
   incremental_strategy: merge
+  +persist_docs:
+    relation: true
+    columns: true
 
 vars:
   start_date: '1999-01-01'
